@@ -384,3 +384,144 @@ void invalidMenuOption() {
     cout << endl;
     cout << "Invalid menu choice. Please enter a number between 1 and 6." << endl;
 }
+
+/*Output
+aidentsang@Aidens-MacBook-Pro src % "/Users/aidentsang/Pierce college Labs C++/CS216_L3_AT/build/main"
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 1
+
+--- Demo: setting the denominator to zero ---
+Fraction objects currently in memory (before demo): 0
+Starting fraction: 2/3
+Fraction objects currently in memory (during demo): 1
+Attempting testFraction.setDenominator(0)...
+Exception caught: Denominator cannot be zero (division by zero is undefined).
+Fraction after the failed attempt (unchanged): 2/3
+Fraction objects currently in memory (after demo): 0
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 2
+
+--- Demo: setting the numerator to zero ---
+Fraction objects currently in memory (before demo): 0
+Starting fraction: 3/4
+Fraction objects currently in memory (during demo): 1
+Attempting testFraction.setNumerator(0)...
+Exception caught: Numerator cannot be zero (0/n is not a legal fraction).
+Fraction after the failed attempt (unchanged): 3/4
+Fraction objects currently in memory (after demo): 0
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 3
+
+--- Demo: setting a negative value ---
+Fraction objects currently in memory (before demo): 0
+Starting fraction: 1/2
+Fraction objects currently in memory (during demo): 1
+Attempting testFraction.setFraction(3, -4)...
+Exception caught: Whole, numerator, and denominator must not be negative (only positive fractions are allowed).
+Fraction after the failed attempt (unchanged): 1/2
+Fraction objects currently in memory (after demo): 0
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 4
+
+--- Demo: invalid mixed number ---
+Fraction objects currently in memory (before demo): 0
+Starting fraction: 2 3/4
+Fraction objects currently in memory (during demo): 1
+Attempting testFraction.setFraction(5, 7, 3)...
+Exception caught: Numerator cannot be greater than the denominator when the whole part is greater than zero (e.g., 5 7/3 is not a legal fraction).
+Fraction after the failed attempt (unchanged): 2 3/4
+Fraction objects currently in memory (after demo): 0
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 5
+
+--- Demo: constructor failure, copy constructor, and object count ---
+Fraction objects currently in memory (before demo): 0
+Attempting Fraction badFraction(-3, 6, 7)...
+Whole, numerator, and denominator must not be negative (only positive fractions are allowed). The fraction was set to default values.
+badFraction after construction: 1
+Creating goodFraction(2, 3, 4)...
+goodFraction: 2 3/4
+Creating copyFraction as a copy of goodFraction...
+copyFraction: 2 3/4
+Fraction objects currently in memory (during demo, three objects alive): 3
+Fraction objects currently in memory (after demo, destructors have run): 0
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 0
+
+Invalid menu choice. Please enter a number between 1 and 6.
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 10
+
+Invalid menu choice. Please enter a number between 1 and 6.
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: !a
+
+Invalid menu choice. Please enter a number between 1 and 6.
+
+===== Fraction Class Test Menu =====
+1. Demo: setting the denominator to zero
+2. Demo: setting the numerator to zero
+3. Demo: setting a negative value
+4. Demo: invalid mixed number (numerator > denominator with a whole part)
+5. Demo: constructor failure, copy constructor, and object count
+6. Quit
+Enter your choice: 6
+
+Goodbye!
+aidentsang@Aidens-MacBook-Pro src % */
